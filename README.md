@@ -23,6 +23,11 @@ roslaunch turtlebot_teleop keyboard_teleop.launch
 dmesg | grep tty
 
 ls /dev/ttyUSB*
+# new tem
+decker exec -it ros1_gui_container bash 
+
+source /opt/ros/noetic/setup.bash && cd /home/ros/catkin_ws/ && source devel/setup.bash
+
 
 ## Ros2 Commands 
 # Bridge 
