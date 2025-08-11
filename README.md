@@ -7,9 +7,17 @@ PS C:\Windows\system32> usbipd bind --busid 1-2
 PS C:\Windows\system32> usbipd attach --wsl --busid 1-2
 
 ## Ros1 Commands
+roscore
+
+roslaunch turtlebot_bringup minimal.launch
+
+#or
+
 roslaunch kobuki_node minimal.launch
 
 rosrun urg_node urg_node _port:=/dev/lidar
+
+roslaunch turtlebot_teleop keyboard_teleop.launch
 
 # check devices 
 dmesg | grep tty
