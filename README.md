@@ -50,6 +50,21 @@ ros2 run turtlebot3_drl real_agent ddpg ddpg_1_stage_5 1500
 ./spawn_goal.h 1 1
 
 
+1st terminal
+ros2 launch jaguar4x4_ros2 jaguar_teleop_demo.launch.py
+
+2nd terminal
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r cmd_vel:=/ros_drrobot_motor_cmd
+
+
+for gazebo
+1st terminal
+ros2 launch jaguar4x4_ros2 gazebo.launch.py
+
+2nd terminal
+os2 run teleop_twist_keyboard teleop_twist_keyboard
+
+
 
 
 
